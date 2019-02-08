@@ -64,11 +64,11 @@ def hollowBox(h,w):
 def fullTriangleDrawTEST(x):
     for h in range(0,x*2-1, 2):
         for i in range(1,2*x-1 , 2):
-            for k in range(0, int(((2*x - 1) - i)/2 -1)+h):
+            for k in range(0, int((((2*x - 1) - i)/2 -1))):
                 print(' ',end='')
             for l in range(0, ((2*x - 1)) - ((2*x - 1) - i)+h):
                 print('*',end='')
-            for m in range(0, int(((2*x - 1) - i)/2)+h):
+            for m in range(0, int((((2*x - 1) - i)/2))):
                 print(' ',end='')
             print("")
         x += 1
