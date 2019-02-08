@@ -58,9 +58,20 @@ def hollowBox(h,w):
         print("~",end="")
     print("")
 
-def tree(x):
-    final_width = pow(2, x-1) + 3 + (x-1)
+#def tree(x):
     
+
+def fullTriangleDrawTEST(x):
+    for h in range(0,x*2-1, 2):
+        for i in range(1,2*x-1 , 2):
+            for k in range(0, int(((2*x - 1) - i)/2 -1)+h):
+                print(' ',end='')
+            for l in range(0, ((2*x - 1)) - ((2*x - 1) - i)+h):
+                print('*',end='')
+            for m in range(0, int(((2*x - 1) - i)/2)+h):
+                print(' ',end='')
+            print("")
+        x += 1
 
 def main():
     print("Place Holder")
@@ -70,7 +81,7 @@ def main():
     #numListPalindrome(5)
     #numListPalindrome(7)
     #numListPalindrome(9)
-    #fullTriangleDraw(5)
+    fullTriangleDrawTEST(5)
     #fullTriangleDraw(10)
     #fullTriangleDraw(15)
     #hollowTriangleDraw(5)
